@@ -9,7 +9,7 @@ namespace TiendaServicios.API.Libro.App
     {
         public class Ejecuta : IRequest
         {
-            public string Titulo { get; set; }
+            public string Titulo { get; set; } = string.Empty;
             public Guid? AutorLibro { get; set; }
             public DateTime? FechaPublicacion { get; set; }
         }

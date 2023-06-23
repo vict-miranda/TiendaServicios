@@ -9,7 +9,7 @@ namespace TiendaServicios.API.Autor.App
     {
         public class AutorUnico : IRequest<AutorLibro>
         {
-            public string AutorGuid { get; set; }
+            public string AutorGuid { get; set; } = string.Empty;
         }
 
         public class Manejeador : IRequestHandler<AutorUnico, AutorLibro>
